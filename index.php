@@ -7,6 +7,7 @@ for($i=1;$i<count($nino);$i++)
     $ninoUrl = explode("'",$nino[$i]);
     $pageUrl = $ninoUrl[2];
     $ninoPage = file_get_contents($pageUrl);
-    print($ninoPage);
+    $page = explode("post-body",$ninoPage);
+    print_r($page);
   }
 ?>
