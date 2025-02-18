@@ -1,5 +1,6 @@
 <?php
 $url = "https://www.ninoiptv.com";
-$nino = file_get_contents($url);
-print($nino);
+$ninoiptv = file_get_contents($url);
+$nino = explode("entry-title-link",$ninoiptv)
+print_r($nino);
 ?>
