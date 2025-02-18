@@ -10,7 +10,9 @@ for($i=1;$i<count($nino);$i++)
     $page = explode("post-body",$ninoPage);
 for($i=j;$i<count($page);$j++)
   {
+    print("$j <br>");
     print($page[$j]);
+    print("<br><br>");
   }
   }
 ?>
