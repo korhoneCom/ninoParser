@@ -8,7 +8,7 @@ for($i=1;$i<count($nino);$i++)
     $pageUrl = $ninoUrl[2];
     $ninoPage = file_get_contents($pageUrl);
     $page = explode("post-body",$ninoPage);
-    $urls = explode("http\:\/\/",$page[48]);
+    $urls = explode("http",$page[48]);
     array_shift($urls[0]);
     print_r($urls);
   }
