@@ -8,7 +8,7 @@ for($i=1;$i<count($nino);$i++)
     $pageUrl = $ninoUrl[2];
     $ninoPage = file_get_contents($pageUrl);
     $page = explode("post-body",$ninoPage);
-for($i=j;$i<count($page);$j++)
+for($j=1;$j<count($page);$j++)
   {
     print("$j <br>");
     print($page[$j]);
