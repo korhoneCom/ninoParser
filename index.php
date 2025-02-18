@@ -9,7 +9,7 @@ for($i=1;$i<count($nino);$i++)
     $ninoPage = file_get_contents($pageUrl);
     $page = explode("post-body",$ninoPage);
     $urls = explode("http",$page[48]);
-    unset($urls[0]);
+    array_shift($urls[0]);
     print_r($urls);
   }
 ?>
