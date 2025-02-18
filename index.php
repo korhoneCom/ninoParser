@@ -8,6 +8,9 @@ for($i=1;$i<count($nino);$i++)
     $pageUrl = $ninoUrl[2];
     $ninoPage = file_get_contents($pageUrl);
     $page = explode("post-body",$ninoPage);
-    print($page[1]);
+for($i=j;$i<count($page);$j++)
+  {
+    print($page[$j]);
+  }
   }
 ?>
