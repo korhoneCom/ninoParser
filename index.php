@@ -9,6 +9,6 @@ for($i=1;$i<count($nino);$i++)
     $ninoPage = file_get_contents($pageUrl);
     $page = explode("post-body",$ninoPage);
     $urls = explode("http",$page[48]);
-    print_r($urls)
+    print_r($urls);
   }
 ?>
