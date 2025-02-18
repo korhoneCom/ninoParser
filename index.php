@@ -6,6 +6,6 @@ print(count($nino));
 for($i=1;$i<count($nino);$i++)
   {
     $ninoUrl = explode("'",$nino[$i]);
-    print_r($ninoUrl);
+    print($ninoUrl[2]);
   }
 ?>
